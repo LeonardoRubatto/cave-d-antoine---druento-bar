@@ -1,0 +1,9 @@
+{
+  "checked_at": "2026-08-31",
+  "license": "https://unsplash.com/license",
+  "assets": [
+    { "local_path": "public/images/langhe-atmosfera.jpg", "photographer": "Beatrice Zinetti", "title": "a vineyard with a sunset", "depicted_location": "Barbaresco, Langhe, Italy", "source": "https://unsplash.com/photos/a-vineyard-with-a-sunset-7Bk2QKqwQRY", "download": "https://images.unsplash.com/photo-1662624335971-57960e9e669f?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=3000", "use": "Atmospheric wine-country section, explicitly distinguished from the venue and its surroundings." },
+    { "local_path": "public/images/calici-atmosfera.jpg", "photographer": "Alexandra Slo", "title": "two wine glasses sitting on top of a wooden table", "source": "https://unsplash.com/photos/two-wine-glasses-sitting-on-top-of-a-wooden-table-sjRFypj_XrY", "download": "https://images.unsplash.com/photo-1632840766301-c6981c0ef92e?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=3000", "use": "Atmospheric wine-glass photo, explicitly distinguished from the venue." }
+  ],
+  "retouching": "None; responsive CSS cropping only."
+}
