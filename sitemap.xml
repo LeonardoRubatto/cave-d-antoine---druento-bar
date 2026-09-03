@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://your-domain-here.example/</loc>
+    <loc>https://caveantoine.pages.dev/</loc>
   </url>
   <url>
-    <loc>https://your-domain-here.example/la-cave.html</loc>
+    <loc>https://caveantoine.pages.dev/la-cave.html</loc>
   </url>
   <url>
-    <loc>https://your-domain-here.example/contatti.html</loc>
+    <loc>https://caveantoine.pages.dev/contatti.html</loc>
   </url>
   <url>
-    <loc>https://your-domain-here.example/note-legali.html</loc>
+    <loc>https://caveantoine.pages.dev/note-legali.html</loc>
   </url>
 </urlset>

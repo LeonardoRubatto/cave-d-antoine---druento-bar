@@ -29,15 +29,18 @@ The complete research and source distinctions are in `research/BUSINESS-RESEARCH
 
 The site is indexable (pages carry no `robots: noindex`; only `404.html` does, which is standard practice). Public launch still requires owner verification of photo reuse permissions, current service/hours and legal information — see `note-legali.html` and `CREDITS.md`, which document what's unverified. Telephone links initiate a call; they do not confirm a booking. Google Maps loads only on request — the map iframe has no `src` until the visitor clicks "Mostra la mappa Google". No form, database, analytics or live Instagram integration is installed.
 
+## Domain
+
+The site is served from `caveantoine.pages.dev`, and every canonical link, `og:url`, `og:image`/`twitter:image`, the `sitemap.xml` entries and the `Sitemap:` line in `robots.txt` name that host. If the site later moves to its own domain, change it in one pass:
+
+```bash
+grep -rl "caveantoine.pages.dev" *.html robots.txt sitemap.xml | xargs sed -i 's~caveantoine.pages.dev~YOUR-NEW-DOMAIN~g'
+```
+
 ## Before you publish
 
-1. **Set the real domain.** Every page's `<head>` currently uses the placeholder `https://your-domain-here.example` for its canonical link, `og:url` and `og:image`/`twitter:image`. Replace it everywhere once you know the live domain:
-   ```bash
-   grep -rl "your-domain-here.example" *.html robots.txt sitemap.xml | xargs sed -i 's~your-domain-here.example~YOUR-REAL-DOMAIN~g'
-   ```
-   Each occurrence is also flagged with an HTML comment at the top of every page's `<head>`.
-2. **Confirm photo permissions and business details** with the venue owner (see `note-legali.html`).
-3. `robots.txt` and `sitemap.xml` are in place at the repo root, ready to serve from the domain root once deployed.
+1. **Confirm photo permissions and business details** with the venue owner (see `note-legali.html`).
+2. `robots.txt` and `sitemap.xml` are in place at the repo root, ready to serve from the domain root.
 
 Design rules and component patterns were adapted from the user's Design Memory repository without modifying it. The project's type scale intentionally uses large editorial serif headings, smaller utility labels, warm ivory/wine colors and an arched hero image. The complete section-by-section provenance is in `research/DESIGN-SYSTEM-MAP.md`. Layered parallax, scroll reveals, headline reveals and the letter-swap nav links are all hand-written vanilla JS/CSS ports of the original React implementation — same behaviour, same accessibility (reduced-motion support, keyboard focus, `aria-current`), no runtime dependency. See `CREDITS.md` for each reused pattern's origin.
 
